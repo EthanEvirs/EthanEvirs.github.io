@@ -1,0 +1,195 @@
+/* Reset styles */
+body {
+    font-family: 'Museo Sans Rounded 700', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    font-family: 'Museo Sans Rounded 900', Arial, sans-serif;
+    margin-top: -30px;
+    margin-bottom: 10px;
+    color: #ffffff !important;
+    /* Change the color to your desired color */
+}
+
+h2 {
+    font-family: 'Museo Sans Rounded 1000', Arial, sans-serif;
+    margin-top: -30px;
+    margin-bottom: 10px;
+    color: #3f3f3f !important;
+    /* Change the color to your desired color */
+}
+
+p {
+    font-family: 'Museo Sans Rounded 300', Arial, sans-serif;
+    color: #ffffff;
+    margin-top: -60px;
+    margin-left: 1.5px;
+}
+
+p1 {
+    font-family: 'Museo Sans Rounded 700', Arial, sans-serif;
+    color: #000000;
+    margin-top: -60px;
+    margin-left: 1.5px;
+}
+
+p2 {
+    font-family: 'Museo Sans Rounded 500', Arial, sans-serif;
+    color: #000000;
+    margin-top: -60px;
+    margin-left: 1.5px;
+}
+
+p3 {
+    font-family: 'Museo Sans Rounded 100', Arial, sans-serif;
+    color: #000000;
+    margin-top: -60px;
+    margin-left: 1.5px;
+
+}
+
+
+/* Container styles */
+.container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow items to wrap to the next line on smaller screens */
+}
+
+/* Center box styles */
+.center-box {
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #58CC02;
+    border-radius: 10px;
+    z-index: 1;
+    min-height: 10vh;
+}
+
+/* Header link styles */
+.header-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    font-family: 'Museo Sans Rounded 500', Arial, sans-serif;
+    /* Add your desired font */
+}
+
+.header-links li {
+    margin-right: 15px;
+    margin-top: 60px;
+}
+
+.header-links a {
+    text-decoration: none;
+    color: #ffffff;
+    /* Change the color to your desired color */
+}
+
+/* Postcard styles */
+.postcard-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* Postcard styles */
+.postcard {
+    border: 1px solid #ddd;
+    overflow: hidden;
+    width: 426px;
+    /* Set the width to 426 pixels */
+    height: 311px;
+    /* Set the height to 311 pixels */
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.postcard .postcard-img {
+    width: 100%;
+    height: auto;
+}
+
+.postcard .education-img {
+    position: absolute;
+    bottom: 10px;
+    /* Adjust the distance from the bottom */
+    right: 10px;
+    /* Adjust the distance from the left */
+    width: 100px;
+    /* Adjust the width as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.postcard-content {
+    padding: 10px;
+}
+
+.postcard-content h2 {
+    margin-top: 0;
+}
+
+/* Sidebar styles */
+.sidebar {
+    flex: 1;
+}
+
+.boxes {
+    height: auto;
+    /* Add styles for the boxes */
+}
+
+@media (max-width: 768px) {
+    .postcard {
+        width: 100%;
+        /* Adjust as needed for smaller screens */
+    }
+}
+
+.header-links a {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #58CC02;
+    /* Match your header background color */
+}
+
+.postcard .postcard-img {
+    object-fit: cover;
+    /* Maintain aspect ratio and cover the container */
+}
+
+
+.header-links a:hover {
+    color: #000000;
+    /* Change link text color to black on hover */
+}
+
+.postcard:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.education-img {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 100px;
+    height: auto;
+}
+
+.bottom-bar {
+    background-color: #58CC02;
+    padding: 30px;
+    text-align: center;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
