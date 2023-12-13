@@ -260,7 +260,7 @@ p3 {
 
 @font-face {
     font-family: 'Museo Sans Rounded 900';
-    src: url('MuseoSansRounded-900.otf') format('otf);
+    src: url('MuseoSansRounded-900.otf') format('otf');
     font-weight: normal;
     font-style: normal;
 }
