@@ -200,3 +200,36 @@ p3 {
     bottom: 0;
     width: 100%;
 }
+
+/* Adjustments for mobile screens */
+@media (max-width: 768px) {
+    .header-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header-links li {
+        margin: 10px 0;
+    }
+
+    .header-links a {
+        padding: 10px 15px;
+    }
+
+    p {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    p1,
+    p2,
+    p3 {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .postcard {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
