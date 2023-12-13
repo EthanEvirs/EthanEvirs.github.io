@@ -29,6 +29,13 @@ p {
     margin-left: 1.5px;
 }
 
+@media (max-width: 768px) {
+    p {
+        margin-top: 10px;
+        /* Adjust this value */
+    }
+}
+
 p1 {
     font-family: 'Museo Sans Rounded 700', Arial, sans-serif;
     color: #000000;
