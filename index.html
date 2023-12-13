@@ -1,208 +1,273 @@
-<!DOCTYPE html>
-<html lang="en">
+/* Reset styles */
+body {
+    font-family: 'Museo Sans Rounded 700', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ethan Evirs</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <style>
-        /* Add some CSS styling for the links */
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+h1 {
+    font-family: 'Museo Sans Rounded 900', Arial, sans-serif;
+    margin-top: -30px;
+    margin-bottom: 10px;
+    color: #ffffff !important;
+    /* Change the color to your desired color */
+}
 
-        .header-links {
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-        }
+h2 {
+    font-family: 'Museo Sans Rounded 1000', Arial, sans-serif;
+    margin-top: -30px;
+    margin-bottom: 10px;
+    color: #3f3f3f !important;
+    /* Change the color to your desired color */
+}
 
-        .header-links li {
-            margin-right: 15px;
-        }
+p {
+    font-family: 'Museo Sans Rounded 300', Arial, sans-serif;
+    color: #ffffff;
+    margin-top: -60px;
+    margin-left: 1.5px;
+}
 
-        .postcard:hover {
-            transform: scale(1.05);
-            transition: transform 0.3s ease-in-out;
-        }
+@media (max-width: 768px) {
+    p {
+        margin-top: 10px;
+        /* Adjust this value */
+    }
+}
 
-        /* Additional CSS for the education image */
-        .postcard {
-            position: relative;
-        }
+p1 {
+    font-family: 'Museo Sans Rounded 700', Arial, sans-serif;
+    color: #000000;
+    margin-top: -60px;
+    margin-left: 1.5px;
+}
 
-        .education-img {
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-            width: 100px;
-            height: auto;
-        }
-    </style>
-</head>
+p2 {
+    font-family: 'Museo Sans Rounded 500', Arial, sans-serif;
+    color: #000000;
+    margin-top: -60px;
+    margin-left: 1.5px;
+}
 
-<body>
-    <div class="container">
-        <div class="center-box">
-            <!-- Your logo and main content go here -->
+p3 {
+    font-family: 'Museo Sans Rounded 100', Arial, sans-serif;
+    color: #000000;
+    margin-top: -60px;
+    margin-left: 1.5px;
 
-            <div class="header-container">
-                <h1>Ethan Evirs</h1>
+}
 
-                <!-- Five clickable links in a straight line to the right of the h1 -->
-                <ul class="header-links">
-                    <li><a href="https://github.com/EthanEvirs">Github</a></li>
-                    <li><a href="https://www.linkedin.com/in/ethan-evirs-a886391b5/">LinkedIn</a></li>
-                    <li><a href="https://www.instagram.com/ethanevirs/">Instagram</a></li>
-                    <li><a href="https://www.twitter.com/ethanevirs">Twitter</a></li>
-                    <li><a href="https://www.youtube.com/channel/UC6ZfJqcjWTLMvH8GjE6Fibg">Youtube</a></li>
-                </ul>
-            </div>
 
-            <p>Software Engineer</p>
-        </div>
-    </div>
+/* Container styles */
+.container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow items to wrap to the next line on smaller screens */
+}
 
-    <!-- Add an audio element for the hover sound -->
-    <audio id="hoverSound" preload="auto"></audio>
+/* Center box styles */
+.center-box {
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #58CC02;
+    border-radius: 10px;
+    z-index: 1;
+    min-height: 10vh;
+}
 
-    <div class="postcard-container">
-        <!-- Postcard sections... -->
-        <!-- Postcard 1 -->
-        <div class="postcard" style="background-color: #ffcccb;" data-sound="sound1.mp3">
-            <img src="education.png" alt="Education" class="education-img">
-            <div class="postcard-content">
-                <h2>Education</h2>
-                <p1>California State University Channel Islands:</p1>
-                <br>
-                <p2>Bachelor of Science in Computer Science</p2>
-                <br>
-                <p3>Aug 2023 - Currently Enrolled</p3>
-                <br>
-                <br>
-                <p1>Ventura College:</p1>
-                <br>
-                <p2>Associate's Arts Degree in Natural Science and Mathematics</p2>
-                <br>
-                <p3>Jun 2018 - May 2023</p3>
-            </div>
-        </div>
-        <!-- Postcard 2 -->
-        <div class="postcard" style="background-color: #b0e57c;" data-sound="sound2.mp3">
-            <img src="work.png" alt="Education" class="education-img">
-            <div class="postcard-content">
-                <h2>Work Experience</h2>
-                <p1>Target Electronics:</p1>
-                <br>
-                <p3>Jul 2019 - Present</p3>
-                <br>
-                <br>
-                <p1>Blenders In The Grass:</p1>
-                <br>
-                <p3>Oct 2014 - Jul 2019 </p3>
-                <br>
-                <br>
-                <p1>Frys Electronics:</p1>
-                <br>
-                <p3>Sep 2016 - Jun 2017</p3>
-            </div>
-            <!-- Content for postcard 2 -->
-        </div>
-        <!-- Postcard 3 -->
-        <div class="postcard" style="background-color: #c3bef0;" data-sound="sound3.mp3">
-            <img src="code.png" alt="Education" class="education-img">
-            <div class="postcard-content">
-                <!-- Content for postcard 3 -->
-                <h2>Programming Skills:</h2>
-                <p1>Front-End Development:</p1>
-                <br>
-                <p3>HTML</p3>
-                <br>
-                <p3>CSS</p3>
-                <br>
-                <p3>JavaScript</p3>
-                <br>
-                <br>
-                <p1>Back-End Development:</p1>
-                <br>
-                <p3>Python</p3>
-                <br>
-                <p3>Java</p3>
-                <br>
-                <p3>Object-Oriented Programming</p3>
-                <br>
-                <br>
-                <p1>General:</p1>
-                <br>
-                <p3>Git/GitHub<be> Bash</p3>
-            </div>
-        </div>
-        <!-- Postcard 4 -->
-        <div class="postcard" style="background-color: #ffd700;" data-sound="sound4.mp3">
-            <div class="postcard-content">
-                <!-- Content for postcard 3 -->
-                <h2>Projects:</h2>
-                <p1>Pumpkin Dodge:</p1>
-                <br>
-                <p3>Pumpkin Dodge is a Pygame-based game where players control a pumpkin, skillfully maneuvering it
-                    around the screen to
-                    avoid falling obstacles and achieve a high score.</p3>
-                <br>
-                <br>
-                <p1>This Website:</p1>
-                <br>
-                <p3>This resume website was crafted using HTML, CSS, and JavaScript, showcasing my abilities in
-                    web development to
-                    provide an engaging and informative user experience.</p3>
-                <br>
-            </div>
-            <!-- Content for postcard 4 -->
-        </div>
-        <!-- Postcard 5 -->
-        <div class="postcard" style="background-color: #ffa500;" data-sound="sound5.mp3">
-            <!-- Content for postcard 5 -->
-            <div class="postcard-content">
-                <!-- Content for postcard 3 -->
-                <h2>Hobbies:</h2>
-                <p1>Music Production:</p1>
-                <br>
-                <p3>In my down time I am always creating music in FL Studio.</p3>
-                <br>
-                <p1>Fitness:</p1>
-                <br>
-                <p3>There is nothing else I love more than Going to the gym.</p3>
-                <br>
-                <p1>Graphic Design:</p1>
-                <br>
-                <p3>If it weren't for computer science, graphics design might be my other passion.</p3>
-                <br>
-                <p1>Video Editing:</p1>
-                <br>
-                <p3>I've been passionately editing YouTube videos for enjoyment over the last fifteen years. </p3>
-                <br>
-                <p1>Screen Printing and T-Shirt Design:</p1>
-                <br>
-                <p3>I've always wanted to make my own clothing company one day.</p3>
-            </div>
+/* Header link styles */
+.header-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    font-family: 'Museo Sans Rounded 500', Arial, sans-serif;
+    /* Add your desired font */
+}
 
-        </div>
-        <!-- Postcard 6 -->
-        <div class="postcard" style="background-color: #87cefa;" data-sound="sound6.mp3">
-            <!-- Content for postcard 6 -->
-            <div class="postcard-content">
-                <!-- Content for postcard 3 -->
-                <h2>About Me:</h2>
-                <p3>I am <output id="age">...</output> years old</p3>
-                <br>
-                <p3></p3>
-            </div>
-        </div>
-    </div>
+.header-links li {
+    margin-right: 15px;
+    margin-top: 60px;
+}
 
-    <script src="scripts.js"></script>
-</body>
+.header-links a {
+    text-decoration: none;
+    color: #ffffff;
+    /* Change the color to your desired color */
+}
 
-</html>
+/* Postcard styles */
+.postcard-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* Postcard styles */
+.postcard {
+    border: 1px solid #ddd;
+    overflow: hidden;
+    width: 426px;
+    /* Set the width to 426 pixels */
+    height: 311px;
+    /* Set the height to 311 pixels */
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.postcard .postcard-img {
+    width: 100%;
+    height: auto;
+}
+
+.postcard .education-img {
+    position: absolute;
+    bottom: 10px;
+    /* Adjust the distance from the bottom */
+    right: 10px;
+    /* Adjust the distance from the left */
+    width: 90px;
+    /* Adjust the width as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.postcard-content {
+    padding: 10px;
+}
+
+.postcard-content h2 {
+    margin-top: 0;
+}
+
+/* Sidebar styles */
+.sidebar {
+    flex: 1;
+}
+
+.boxes {
+    height: auto;
+    /* Add styles for the boxes */
+}
+
+@media (max-width: 768px) {
+    .postcard {
+        width: 100%;
+        /* Adjust as needed for smaller screens */
+    }
+}
+
+.header-links a {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #58CC02;
+    /* Match your header background color */
+}
+
+.postcard .postcard-img {
+    object-fit: cover;
+    /* Maintain aspect ratio and cover the container */
+}
+
+
+.header-links a:hover {
+    color: #000000;
+    /* Change link text color to black on hover */
+}
+
+.postcard:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.education-img {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 100px;
+    height: auto;
+}
+
+.bottom-bar {
+    background-color: #58CC02;
+    padding: 30px;
+    text-align: center;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Adjustments for mobile screens */
+@media (max-width: 768px) {
+    .header-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header-links li {
+        margin: 10px 0;
+    }
+
+    .header-links a {
+        padding: 10px 15px;
+    }
+
+    p {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    p1,
+    p2,
+    p3 {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .postcard {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+
+
+/* Define the font faces for different weights/styles */
+@font-face {
+    font-family: 'Museo Sans Rounded 300';
+    src: url('MuseoSansRounded-300.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans Rounded 500';
+    src: url('MuseoSansRounded-500.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans Rounded 700';
+    src: url('MuseoSansRounded-700.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans Rounded 900';
+    src: url('MuseoSansRounded-900.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans Rounded 1000';
+    src: url('MuseoSansRounded-1000.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
