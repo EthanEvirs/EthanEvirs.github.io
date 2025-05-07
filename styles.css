@@ -78,6 +78,10 @@ p3 {
     min-height: 10vh;
 }
 
+.postcard-content {
+    text-align: center;
+}
+
 /* Header link styles */
 .header-links {
     list-style-type: none;
